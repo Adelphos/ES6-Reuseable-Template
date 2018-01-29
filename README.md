@@ -3,6 +3,8 @@
 A reuseable ES6 template
 
 ## Useage
+
+### Basic
 ```javascript
 const greetingTemplate = Template(() => `
   <span>Hello, ${name}!</span>
@@ -10,7 +12,7 @@ const greetingTemplate = Template(() => `
 greetingTemplate({ name: 'Brian' }); // returns "<span>Hello, Brian!</span>"
 ```
 
-## JS Logic
+### With Logic 👍
 ```javascript
 const greetingTemplate = Template(() => `
   <span>Hello, ${name ? ', ' + name + '!' : '!'}!</span>
