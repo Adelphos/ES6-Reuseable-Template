@@ -24,7 +24,7 @@ greetingTemplate({ name: 'Brian' }); // returns "<span>Hello, Brian!</span>"
 ## Rationale
 ES6 template literals are awesome, but they aren't reuseable. When they are defined, they are interpolated and become strings immediately. There are various approaches to turn template literals into reuseable templates, but most have some annoying flaw. Tagged Template Literals are somewhat helpful, but you have to pass variables in a certain order. Another solution is to wrap the template literal in a function, which is helpful, but that requires namespacing the referenced variables, which feels a little cumbersome.
 
-*** No more namespacing ***
+***No more namespacing***
 ```javascript
 // Template requiring all variables to be prefixed by 'data.'
 const template = data => `
