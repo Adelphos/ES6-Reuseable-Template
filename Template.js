@@ -1,4 +1,3 @@
-
 function Template(cb) {
   return function(data) {
     const dataKeys = [];
