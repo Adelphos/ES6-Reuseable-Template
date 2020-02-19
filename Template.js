@@ -6,7 +6,7 @@ function Template(cb) {
       dataKeys.push(key);
       dataVals.push(data[key]);
     }
-    let func = new Function(...dataKeys, 'return (' + cb + ')();');
+    const func = new Function(...dataKeys, 'return (' + cb + ')();');
     return func(...dataVals);
   }
 }
